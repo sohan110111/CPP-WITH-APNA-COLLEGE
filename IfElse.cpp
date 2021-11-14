@@ -54,6 +54,32 @@ do
 } while (d > 0);
 
 
+
+    // continue statement skip to the next iteration of the loop
+    // break statement terminate the loop
+
+    int pocketMoney = 3000;
+    for (int date = 1; date <= 30; date++) {
+        if (date % 2 == 0)
+        {
+            continue;
+        }
+        if (pocketMoney == 0) {
+            break;
+        }
+        cout << "Got out today ! " << endl;
+        pocketMoney = pocketMoney - 300;
+    }
+
+
+    for (int count = 1; count <= 100; count++) {
+        if (count % 3 == 0) {
+            continue;
+        }
+
+        cout << "Now print 1 to 100 not divisible by 3: " << count << endl;
+    }
+    
     return 0;
     
 }
