@@ -15,32 +15,43 @@ int main() {
     {
         if (number % i == 0)
         {
-            cout << "This number is not prime.";
+            cout << "This number is not prime." << endl;
             break;
         }
             
     } 
 
     if (i == number) {
-        cout << "Prime";
+        cout << "Prime" << endl;
     }
+
+    //Now check between two numbers
+
+    int a, b;
+
+    cout << "Please input two number of for check all prime number between two numbers : ";
+    cin >> a >> b;
+
+    while (a <= b)
+    {
+        int i;
+        for (i = 2; i < a; i++)
+        {
+            if (a % i == 0)
+            {
+                break;
+            }
+                
+        } 
+ 
+        if (i == a) {
+            cout << a << endl;
+        }
+
+        a++; 
+    }
+    
     
 
     return 0;
 }
-
-   // Now check between two numbers
-
-    // int a, b;
-
-    // cout << "Please input two number of for check all prime number between two numbers : ";
-    // cin >> a << b;
-
-    // for ( ; a < b; a++)
-    // {
-    //     if (++a % a == 0)
-    //     {
-    //         cout << "This i";
-    //     }
-        
-    // }
